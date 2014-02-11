@@ -1,0 +1,28 @@
+army = {
+	name = "Haeren"
+	location = 313
+	regiment = {
+		name= "1.1. Infanteridivision"
+		type = infantry
+		home = 309
+	}
+
+	regiment = {
+		name= "2.1. Infanteridivision"
+		type = infantry
+		home = 310
+	}
+
+	regiment = {
+		name= "3.1. Infanteridivision"
+		type = infantry
+		home = 305
+	}
+
+	regiment = {
+		name= "1.1. Kavalleridivision"
+		type = hussar
+		home = 313
+	}
+
+}

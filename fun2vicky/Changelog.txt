@@ -1,0 +1,7 @@
+1.1
+-Mr. Chairman localisation changed to Comrade Chairman
+-Changed election period for Semi-Constitutional Monarchy to 54 months
+-USA last election changed
+-USA upper house composition changed
+-Redid political parties for NET, ITA and USA
+-Changed the max military expenditure for the War policies

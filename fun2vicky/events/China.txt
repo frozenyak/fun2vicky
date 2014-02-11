@@ -1,0 +1,794 @@
+country_event = {
+	title = "EVTNAME90900"
+	desc = "EVTDESC90900"
+	picture = "Celebration"
+
+	id = 90900
+	news = yes
+	news_desc_long = "EVTDESC90900_NEWS_LONG"
+	news_desc_medium = "EVTDESC90900_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC90900_NEWS_SHORT"
+
+	is_triggered_only = yes
+	
+	trigger = {
+		tag = CHI
+		NOT = { has_global_flag = the_dragon_wakes }
+		}
+
+	option = {				
+		name = "EVTOPTA90900"
+		set_global_flag = the_dragon_wakes
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				substate_of = CHI
+				num_of_cities = 1
+			}
+			country_event = { id=90901 days=0 }
+		}
+		prestige = 10
+			remove_country_modifier = educational_reform
+			remove_country_modifier = military_reform
+			remove_country_modifier = western_influences
+			remove_country_modifier = uncivilized_isolationism
+			remove_country_modifier = trade_restrictions
+			remove_country_modifier = sayings_of_the_dutch
+			remove_country_modifier = extraterritoriality_granted
+			any_owned = {
+				remove_province_modifier = western_presence
+				remove_province_modifier = foreign_smugglers
+				remove_province_modifier = foreign_trading_post
+				remove_province_modifier = local_opium_habit
+				remove_province_modifier = european_military_mission
+				remove_province_modifier = legation_quarter
+				remove_province_modifier = kettler_denkmal
+			}
+		1002 = {
+			add_core = CHI
+		}
+		1082 = {
+			add_core = CHI
+		}
+		1083 = {
+			add_core = CHI
+		}
+		1084 = {
+			add_core = CHI
+		}
+		1085 = {
+			add_core = CHI
+		}
+		1479 = {
+			add_core = CHI
+		}
+		1480 = {
+			add_core = CHI
+		}
+		1533 = {
+			add_core = CHI
+		}
+		1552 = {
+			add_core = CHI
+		}
+		1553 = {
+			add_core = CHI
+		}
+		1554 = {
+			add_core = CHI
+		}
+		1555 = {
+			add_core = CHI
+		}
+		2617 = {
+			add_core = CHI
+		}
+		
+		
+		1465 = {
+			add_core = CHI
+		}
+		1466 = {
+			add_core = CHI
+		}
+		1467 = {
+			add_core = CHI
+		}
+		1468 = {
+			add_core = CHI
+		}
+		1469 = {
+			add_core = CHI
+		}
+		1532 = {
+			add_core = CHI
+		}
+		1534 = {
+			add_core = CHI
+		}
+		1535 = {
+			add_core = CHI
+		}
+		2207 = {
+			add_core = CHI
+		}
+		2608 = {
+			add_core = CHI
+		}
+		2678 = {
+			add_core = CHI
+		}
+		2679 = {
+			add_core = CHI
+		}
+		
+		1482 = {
+			add_core = CHI
+		}
+		1483 = {
+			add_core = CHI
+		}
+		1484 = {
+			add_core = CHI
+		}
+		1486 = {
+			add_core = CHI
+		}
+		1487 = {
+			add_core = CHI
+		}
+		1493 = {
+			add_core = CHI
+		}
+		1494 = {
+			add_core = CHI
+		}
+		1495 = {
+			add_core = CHI
+		}
+		1497 = {
+			add_core = CHI
+		}
+		1499 = {
+			add_core = CHI
+		}
+		1500 = {
+			add_core = CHI
+		}
+		1501 = {
+			add_core = CHI
+		}
+		1502 = {
+			add_core = CHI
+		}
+		1503 = {
+			add_core = CHI
+		}
+		1504 = {
+			add_core = CHI
+		}
+		1524 = {
+			add_core = CHI
+		}
+		1525 = {
+			add_core = CHI
+		}
+		1526 = {
+			add_core = CHI
+		}
+		1527 = {
+			add_core = CHI
+		}
+		1528 = {
+			add_core = CHI
+		}
+		1529 = {
+			add_core = CHI
+		}
+		1530 = {
+			add_core = CHI
+		}
+		1545 = {
+			add_core = CHI
+		}
+		1546 = {
+			add_core = CHI
+		}
+		1547 = {
+			add_core = CHI
+		}
+		1548 = {
+			add_core = CHI
+		}
+		1549 = {
+			add_core = CHI
+		}
+		1550 = {
+			add_core = CHI
+		}
+		1551 = {
+			add_core = CHI
+		}
+		
+		
+		1488 = {
+			add_core = CHI
+		}
+		1489 = {
+			add_core = CHI
+		}
+		1490 = {
+			add_core = CHI
+		}
+		1491 = {
+			add_core = CHI
+		}
+		1492 = {
+			add_core = CHI
+		}
+		1556 = {
+			add_core = CHI
+		}
+		1557 = {
+			add_core = CHI
+		}
+		1558 = {
+			add_core = CHI
+		}
+		1559 = {
+			add_core = CHI
+		}
+		1561 = {
+			add_core = CHI
+		}
+		1562 = {
+			add_core = CHI
+		}
+		1582 = {
+			add_core = CHI
+		}
+		2062 = {
+			add_core = CHI
+		}
+		
+		
+		1594 = {
+			add_core = CHI
+		}
+		1595 = {
+			add_core = CHI
+		}
+		1596 = {
+			add_core = CHI
+		}
+		1597 = {
+			add_core = CHI
+		}
+		1598 = {
+			add_core = CHI
+		}
+		1599 = {
+			add_core = CHI
+		}
+		1600 = {
+			add_core = CHI
+		}
+		2607 = {
+			add_core = CHI
+		}
+		
+		1505 = {
+			add_core = CHI
+		}
+		1506 = {
+			add_core = CHI
+		}
+		1507 = {
+			add_core = CHI
+		}
+		1519 = {
+			add_core = CHI
+		}
+		1520 = {
+			add_core = CHI
+		}
+		1521 = {
+			add_core = CHI
+		}
+		1523 = {
+			add_core = CHI
+		}
+		1577 = {
+			add_core = CHI
+		}		
+		1578 = {
+			add_core = CHI
+		}
+		1579 = {
+			add_core = CHI
+		}
+		1580 = {
+			add_core = CHI
+		}
+		1581 = {
+			add_core = CHI
+		}
+		1583 = {
+			add_core = CHI
+		}
+		1584 = {
+			add_core = CHI
+		}
+		1585 = {
+			add_core = CHI
+		}
+		1586 = {
+			add_core = CHI
+		}		
+		1601 = {
+			add_core = CHI
+		}
+		1602 = {
+			add_core = CHI
+		}
+		1603 = {
+			add_core = CHI
+		}
+		
+		1498 = {
+			add_core = CHI
+		}
+	}
+}
+
+# Event to Inherit
+country_event = {
+	id = 90901
+	title = "EVTNAME90900"
+	desc = "EVTDESC90901"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90901"
+#		civilized = yes
+		FROM = {
+			inherit = THIS
+		}
+		ai_chance = {
+			factor = 10
+			 modifier = {
+				factor = 1000
+				relation = { who = FROM value = 100 }
+			} 
+		}
+	}
+
+	option = {
+		name = "EVTOPTB90100"
+		ai_chance = {
+			factor = 100
+		}
+		prestige = 10
+		relation = {
+			who = FROM
+			value = -200
+		}
+#		civilized = yes
+		release_vassal = THIS
+		leave_alliance = CHI
+	}
+}
+
+# Event to reject
+country_event = {
+	id = 90902 #The Breakup of China
+	news = yes
+	news_desc_long = "EVTDESC90902_NEWS_LONG"
+	news_desc_medium = "EVTDESC90902_NEWS_MEDIUM"
+	news_desc_short = "EVTDESC90902_NEWS_SHORT"
+	
+	title = "EVTNAME90902"
+	desc = "EVTDESC90902"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90902"
+		release_vassal = THIS
+		leave_alliance = CHI
+#		civilized = yes
+	}
+}
+
+country_event = {
+	title = "westernize_nation_title"
+	desc = "westernize_nation_desc"
+	picture = "Celebration"
+
+	id = 90903
+
+	is_triggered_only = yes
+	
+	trigger = {
+		NOT = { has_global_flag = the_dragon_wakes }
+		OR = { 
+		tag = GXI
+		tag = MCK
+		tag = XIN
+		tag = YNN
+		tag = XBI
+		tag = MGL
+		}
+		}
+
+	option = {				
+		name = "EVTOPTA90902"
+		set_global_flag = the_dragon_wakes
+		release_vassal = THIS
+		leave_alliance = CHI
+		any_country = {
+			limit = {
+				NOT = {
+					tag = THIS
+				}
+				substate_of = CHI
+				num_of_cities = 1
+			}
+			country_event = { id=90902 days=0 }
+		}
+		CHI = {
+			country_event = { id=90904 days=0 }
+		}
+		prestige = 10
+			remove_country_modifier = educational_reform
+			remove_country_modifier = military_reform
+			remove_country_modifier = western_influences
+			remove_country_modifier = uncivilized_isolationism
+			remove_country_modifier = trade_restrictions
+			remove_country_modifier = sayings_of_the_dutch
+			remove_country_modifier = extraterritoriality_granted
+			any_owned = {
+				remove_province_modifier = western_presence
+				remove_province_modifier = foreign_smugglers
+				remove_province_modifier = foreign_trading_post
+				remove_province_modifier = local_opium_habit
+				remove_province_modifier = european_military_mission
+				remove_province_modifier = legation_quarter
+				remove_province_modifier = kettler_denkmal
+			}
+	}
+}
+
+country_event = {
+	id = 90904
+	title = "EVTNAME90902"
+	desc = "EVTDESC90902"
+	picture = "Celebration"
+
+	is_triggered_only = yes
+
+	option = {
+		name = "EVTOPTA90904"
+#		civilized = yes
+		prestige = -20
+		any_pop = {
+			scaled_militancy = {
+				ideology = liberal
+				factor = 1
+			}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = conservative
+				factor = 3
+				}
+		}
+		any_pop = {
+			scaled_militancy = {
+				ideology = reactionary
+				factor = 6
+			}
+
+		}
+		1002 = {
+			add_core = CHI
+		}
+		1082 = {
+			add_core = CHI
+		}
+		1083 = {
+			add_core = CHI
+		}
+		1084 = {
+			add_core = CHI
+		}
+		1085 = {
+			add_core = CHI
+		}
+		1479 = {
+			add_core = CHI
+		}
+		1480 = {
+			add_core = CHI
+		}
+		1533 = {
+			add_core = CHI
+		}
+		1552 = {
+			add_core = CHI
+		}
+		1553 = {
+			add_core = CHI
+		}
+		1554 = {
+			add_core = CHI
+		}
+		1555 = {
+			add_core = CHI
+		}
+		2617 = {
+			add_core = CHI
+		}
+		
+		
+		1465 = {
+			add_core = CHI
+		}
+		1466 = {
+			add_core = CHI
+		}
+		1467 = {
+			add_core = CHI
+		}
+		1468 = {
+			add_core = CHI
+		}
+		1469 = {
+			add_core = CHI
+		}
+		1532 = {
+			add_core = CHI
+		}
+		1534 = {
+			add_core = CHI
+		}
+		1535 = {
+			add_core = CHI
+		}
+		2207 = {
+			add_core = CHI
+		}
+		2608 = {
+			add_core = CHI
+		}
+		2678 = {
+			add_core = CHI
+		}
+		2679 = {
+			add_core = CHI
+		}
+		
+		1482 = {
+			add_core = CHI
+		}
+		1483 = {
+			add_core = CHI
+		}
+		1484 = {
+			add_core = CHI
+		}
+		1486 = {
+			add_core = CHI
+		}
+		1487 = {
+			add_core = CHI
+		}
+		1493 = {
+			add_core = CHI
+		}
+		1494 = {
+			add_core = CHI
+		}
+		1495 = {
+			add_core = CHI
+		}
+		1497 = {
+			add_core = CHI
+		}
+		1499 = {
+			add_core = CHI
+		}
+		1500 = {
+			add_core = CHI
+		}
+		1501 = {
+			add_core = CHI
+		}
+		1502 = {
+			add_core = CHI
+		}
+		1503 = {
+			add_core = CHI
+		}
+		1504 = {
+			add_core = CHI
+		}
+		1524 = {
+			add_core = CHI
+		}
+		1525 = {
+			add_core = CHI
+		}
+		1526 = {
+			add_core = CHI
+		}
+		1527 = {
+			add_core = CHI
+		}
+		1528 = {
+			add_core = CHI
+		}
+		1529 = {
+			add_core = CHI
+		}
+		1530 = {
+			add_core = CHI
+		}
+		1545 = {
+			add_core = CHI
+		}
+		1546 = {
+			add_core = CHI
+		}
+		1547 = {
+			add_core = CHI
+		}
+		1548 = {
+			add_core = CHI
+		}
+		1549 = {
+			add_core = CHI
+		}
+		1550 = {
+			add_core = CHI
+		}
+		1551 = {
+			add_core = CHI
+		}
+		
+		
+		1488 = {
+			add_core = CHI
+		}
+		1489 = {
+			add_core = CHI
+		}
+		1490 = {
+			add_core = CHI
+		}
+		1491 = {
+			add_core = CHI
+		}
+		1492 = {
+			add_core = CHI
+		}
+		1556 = {
+			add_core = CHI
+		}
+		1557 = {
+			add_core = CHI
+		}
+		1558 = {
+			add_core = CHI
+		}
+		1559 = {
+			add_core = CHI
+		}
+		1561 = {
+			add_core = CHI
+		}
+		1562 = {
+			add_core = CHI
+		}
+		1582 = {
+			add_core = CHI
+		}
+		2062 = {
+			add_core = CHI
+		}
+		
+		
+		1594 = {
+			add_core = CHI
+		}
+		1595 = {
+			add_core = CHI
+		}
+		1596 = {
+			add_core = CHI
+		}
+		1597 = {
+			add_core = CHI
+		}
+		1598 = {
+			add_core = CHI
+		}
+		1599 = {
+			add_core = CHI
+		}
+		1600 = {
+			add_core = CHI
+		}
+		2607 = {
+			add_core = CHI
+		}
+		
+		1505 = {
+			add_core = CHI
+		}
+		1506 = {
+			add_core = CHI
+		}
+		1507 = {
+			add_core = CHI
+		}
+		1519 = {
+			add_core = CHI
+		}
+		1520 = {
+			add_core = CHI
+		}
+		1521 = {
+			add_core = CHI
+		}
+		1523 = {
+			add_core = CHI
+		}
+		1577 = {
+			add_core = CHI
+		}		
+		1578 = {
+			add_core = CHI
+		}
+		1579 = {
+			add_core = CHI
+		}
+		1580 = {
+			add_core = CHI
+		}
+		1581 = {
+			add_core = CHI
+		}
+		1583 = {
+			add_core = CHI
+		}
+		1584 = {
+			add_core = CHI
+		}
+		1585 = {
+			add_core = CHI
+		}
+		1586 = {
+			add_core = CHI
+		}		
+		1601 = {
+			add_core = CHI
+		}
+		1602 = {
+			add_core = CHI
+		}
+		1603 = {
+			add_core = CHI
+		}		
+		
+		1498 = {
+			add_core = CHI
+		}
+
+	}
+}

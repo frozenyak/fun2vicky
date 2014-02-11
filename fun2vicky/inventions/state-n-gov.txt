@@ -1,0 +1,237 @@
+#state_n_government
+populism = {
+	limit = { state_n_government = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			average_consciousness = 3
+		}
+		modifier = {
+			factor = 1
+			average_consciousness = 5
+		}
+		modifier = {
+			factor = 2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = -6
+			invention = establishment
+		}
+	}
+	political_reform_desire = 0.05
+}
+
+establishment = {
+	limit = { state_n_government = 1 }
+	chance = {
+		base = 3
+		modifier = {
+			factor = 2
+			nationalvalue = nv_order
+		}
+		modifier = {
+			factor = -5
+			invention = populism
+		}
+	}
+	political_reform_desire = -0.05
+}
+
+clericalism = {
+	limit = { state_n_government = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			moralism = 5			
+		}
+		modifier = {
+			factor = 1
+			moralism = 10			
+		}
+		modifier = {
+			factor = 1
+			moralism = 20			
+		}
+		modifier = {
+			factor = 1
+			religious_policy = moralism
+		}
+		modifier = {
+			factor = 2
+			ruling_party_ideology = reactionary
+		}
+		modifier = {
+			factor = 1
+			ruling_party_ideology = conservative
+		}
+		modifier = {
+			factor = -5
+			invention = anticlericalism_inv
+		}
+		
+	}
+	effect = {
+		plurality = -0.05
+	}
+}
+
+anticlericalism_inv = {
+	limit = { state_n_government = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			OR = {
+				pro_atheism = 5
+				secularized = 5
+			} 
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				pro_atheism = 10
+				secularized = 10
+			} 
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				pro_atheism = 20
+				secularized = 20
+			} 
+		}
+		modifier = {
+			factor = 1
+			OR = {
+				religious_policy = pro_atheism
+				religious_policy = secularized
+			}
+		}
+		modifier = {
+			factor = 2
+			OR = { 
+				ruling_party_ideology = anarcho_liberal
+				ruling_party_ideology = communist
+			}
+		}
+		modifier = {
+			factor = 1
+			ruling_party_ideology = liberal
+		}
+		modifier = {
+			factor = -5
+			invention = clericalism
+		}
+		
+	}
+	effect = {
+		plurality = 0.05
+	}
+}
+
+bureaucracy_inv = {
+	limit = { state_n_government = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			nationalvalue = nv_equality
+		}
+		modifier = {
+			factor = 2
+			OR = {
+				ruling_party_ideology = communist
+				ruling_party_ideology = socialist
+			}
+		}
+		modifier = {
+			factor = -5
+			invention = nepotism
+		}	
+	}
+	effect = {
+		tax_eff = 0.05
+	}
+}
+
+nepotism = {
+	limit = { state_n_government = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			nationalvalue = nv_order
+		}
+
+		modifier = {
+			factor = -5
+			invention = bureaucracy_inv
+		}	
+	}
+	social_reform_desire = 0.05
+}
+
+meritocracy = {
+	limit = { state_n_government = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			literacy = 0.4
+		}
+		modifier = {
+			factor = 1
+			literacy = 0.5
+		}
+		modifier = {
+			factor = 1
+			literacy = 0.6
+		}
+		modifier = {
+			factor = 2
+			nationalvalue = nv_liberty
+		}
+		modifier = {
+			factor = -5
+			invention = aristocracy
+		}	
+	}
+	effect = {
+		plurality = 0.05
+		tax_eff = 0.05
+	}
+}
+
+aristocracy = {
+	limit = { state_n_government = 1 }
+	chance = {
+		base = 2
+		modifier = {
+			factor = 1
+			not = { literacy = 0.4 }
+		}
+		modifier = {
+			factor = 1
+			not = { literacy = 0.3 }
+		}
+		modifier = {
+			factor = 1
+			not = { literacy = 0.2 }
+		}
+		modifier = {
+			factor = 2
+			nationalvalue = nv_order
+		}
+		modifier = {
+			factor = -5
+			invention = meritocracy
+		}	
+	}
+	effect = {
+		plurality = -0.05
+		permanent_prestige = 10 
+	}
+}

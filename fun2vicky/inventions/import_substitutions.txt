@@ -1,0 +1,92 @@
+import_substitution_industrialization_2 = {
+	#limit = { government_interventionism = 1 }
+	limit = { synthetic_polymers = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			economic_policy = planned_economy
+		}
+		modifier = {
+			factor = 3
+			economic_policy = interventionism
+		}
+		modifier = {
+			factor = 2
+			trade_policy = protectionism
+		}
+		modifier = {
+			factor = -6
+			NOT = {
+				invention = bakelite
+			}
+		}
+	}
+	effect = {
+		activate_building = synthetic_rubber_factory
+		factory_goods_throughput = { rubber = -0.5 }
+	}
+}
+
+import_substitution_industrialization_3 = {
+	#limit = { government_interventionism = 1 }
+	limit = { synthetic_polymers = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			economic_policy = planned_economy
+		}
+		modifier = {
+			factor = 3
+			economic_policy = interventionism
+		}
+		modifier = {
+			factor = 2
+			trade_policy = protectionism
+		}
+		modifier = {
+			factor = -6
+			NOT = {
+				invention = rayon
+			}
+		}
+	}
+	effect = {
+		activate_building = synthetic_tropical_factory
+		factory_goods_throughput = { tropical_wood = -0.5 }
+	}
+}
+
+import_substitution_industrialization_4 = {
+	#limit = { government_interventionism = 1 }
+	limit = { synthetic_polymers = 1 }
+	news = no
+	chance = {
+		base = 2
+		modifier = {
+			factor = 2
+			economic_policy = planned_economy
+		}
+		modifier = {
+			factor = 3
+			economic_policy = interventionism
+		}
+		modifier = {
+			factor = 2
+			trade_policy = protectionism
+		}
+		modifier = {
+			factor = -6
+			NOT = {
+				invention = rayon
+			}
+		}
+	}
+	effect = {
+		activate_building = synthetic_silk_factory
+		factory_goods_throughput = { silk = -0.5 }
+	}
+}
